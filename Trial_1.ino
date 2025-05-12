@@ -2,8 +2,8 @@
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
 
-const char* ssid = "RAYHAN";
-const char* password = "RAYHANGU";
+const char* ssid = "YOUR SSID";
+const char* password = "YOUR PASSWORD";
 
 void setup() {
   Serial.begin(115200);
@@ -42,7 +42,7 @@ void loop() {
     String jsonString;
     serializeJson(doc, jsonString);  // Hapus baris duplikat ini
 
-    String server = "http://192.168.100.30/iot-dashboard/insert.php";
+    String server = "http://192.XXX.XXX.XX/iot-dashboard/insert.php";
     http.begin(server);
     http.addHeader("Content-Type", "application/json");
 
