@@ -43,7 +43,7 @@ your-project-folder/
     ├── insert.php        # PHP script to receive & store data from ESP32
     ├── read.php          # PHP script to read the latest data from the database
     └── db.php            # PHP script for database connection
-
+```
 
 ## Database Setup
 
