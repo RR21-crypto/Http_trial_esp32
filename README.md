@@ -7,6 +7,7 @@ This project serves as a starting point for my exploration into building an IoT 
 While this is an initial learning project, its architecture has the potential to be extended and scaled for more complex IoT applications.
 
 ## Features
+![image](https://github.com/user-attachments/assets/992514b6-2537-41b4-a355-c74ab66f7226)
 
 *   Collects data (simulated temperature and humidity in this example) from an ESP32.
 *   Sends sensor data wirelessly via WiFi using HTTP POST requests.
@@ -32,21 +33,22 @@ While this is an initial learning project, its architecture has the potential to
 
 ## Project Structure
 
+```bash
 your-project-folder/
 ├── esp32_sketch/
 │   └── esp32_iot_sender.ino  # ESP32 code
 └── webserver/
-└── iot-dashboard/        # Place this folder in your web server's root directory (e.g., xampp/htdocs)
-├── index.html        # Main dashboard web page
-├── insert.php        # PHP script to receive & store data from ESP32
-├── read.php          # PHP script to read the latest data from the database
-└── db.php            # PHP script for database connection
-
+    └── iot-dashboard/        # Place this folder in your web server's root directory (e.g., xampp/htdocs)
+    ├── index.html        # Main dashboard web page
+    ├── insert.php        # PHP script to receive & store data from ESP32
+    ├── read.php          # PHP script to read the latest data from the database
+    └── db.php            # PHP script for database connection
 
 
 ## Database Setup
 
 You need to set up a database and a table on your MySQL/MariaDB server (e.g., using phpMyAdmin).
+![image](https://github.com/user-attachments/assets/f3378c21-fea1-4352-b67b-3d1e0dafe4ff)
 
 1.  Create a new database named `iot_data`.
 2.  Inside the `iot_data` database, create a table named `datasensor` with the following structure:
